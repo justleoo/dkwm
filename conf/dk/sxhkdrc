@@ -1,0 +1,23 @@
+super + Return 
+        alacritty
+
+super + r 
+        rofi -show run
+
+super + p 
+        gnome-screenshot --interactive
+
+super + {_,shift + ,ctrl + }{1-6}
+	dkcmd ws {view,send,follow} {1-6}
+
+super + q
+        dkcmd win kill
+
+super + s 
+        dkcmd win float
+
+super + shift + c 
+        dkcmd restart
+
+super + shift + r 
+        dkcmd win resize {w=-50,w=+50}

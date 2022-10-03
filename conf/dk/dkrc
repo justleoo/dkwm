@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+dkcmd set numws=6
+
+dkcmd set border width=7 outer_width=6 \
+		colour \
+		focus='#dee1e6'\
+		unfocus='#dee1e6' \
+		urgent='#dee1e6' \
+		outer_focus='#dee1e6' \
+		outer_unfocus='#dee1e6' \
+		outer_urgent='#dee1e6'
+
+dkcmd set mouse mod=super move=button1 resize=button3
+
+picom &
+sxhkd -c ~/.config/dk/sxhkdrc &
+feh --bg-scale ~/.config/dk/pinkfloyd.webp &
+setxkbmap -model abnt2 -layout br -variant abnt2
+pipewire;pipewire-pulse
